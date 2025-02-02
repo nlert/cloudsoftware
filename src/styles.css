@@ -13,6 +13,10 @@
     padding: 0;
 }
 
+body {
+    background-color: var(--blue);
+}
+
 h1, span.logo-text {
     font-family: "Orbitron", serif;
     font-optical-sizing: auto;
@@ -45,6 +49,10 @@ h2, p, span, a {
     font-size: 20px;
 }
 
+.shadow {
+    box-shadow: var(--box-shadow);
+}
+
 /* header */
 header {
     width: 100vw;
@@ -53,7 +61,10 @@ header {
     padding-inline: 40px;
     justify-content: space-between;
 
-    position: fixed;
+    position: sticky;
+    top: 0;
+
+    transition: box-shadow 500ms ease;
 }
 
 header, .logo-container {
