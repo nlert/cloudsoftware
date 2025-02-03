@@ -5,6 +5,8 @@
     --light-blue: #ddeafe;
     --box-shadow: 0 6px 6px 2px rgba(0, 0, 0, 0.25);
     --border-radius: 15px;
+    --content-width: clamp(800px, 70vw, 1000px);
+
     scroll-behavior: smooth;
 }
 
@@ -86,17 +88,22 @@ header {
     width: 100vw;
     height: 65px;
     background-color: var(--blue);
-    padding-inline: 40px;
-    justify-content: space-between;
-
     position: fixed;
     top: 0;
     z-index: 9999;
 
+    display: grid;
+    place-items: center;
+
     transition: box-shadow 500ms ease;
 }
 
-header, .logo-container {
+.header-container {
+    width: var(--content-width);
+    justify-content: space-between;
+}
+
+.header-container, .logo-container {
     display: flex;
     align-items: center;
 }
@@ -184,7 +191,7 @@ header, .logo-container {
 /* About */
 .about {
     margin: auto;
-    width: clamp(800px, 70vw, 1000px);
+    width: var(--content-width);
     padding-block: 50px;
 
     display: flex;
@@ -200,9 +207,18 @@ header, .logo-container {
     display: grid;
     place-items: center;
     border-radius: 15px 15px 0 0;
-    padding: 35px;
+    height: 100px;
     margin-bottom: 35px;
 
+}
+
+.about-footer {
+    background: linear-gradient(to top, 
+                                rgba(221, 234, 254, 1) 0%, 
+                                rgba(221, 234, 254, 0) 100%);
+    border-radius: 0 0 15px 15px;
+    height: 100px;
+    margin-top: 35px;
 }
 
 .about-module {
