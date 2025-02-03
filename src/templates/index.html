@@ -84,6 +84,22 @@
                 </div>
                 <div class="about-footer"></div>
             </section>
+            <section class="contact">
+                <a class="contact-btn" href="contact.html">Contact Us</a>
+            </section>
         </main>
+        <footer>
+            <span class="footer-text">© 
+				<span id="year" class="footer-text">
+                    <script>
+                        function displayYear() {
+                            const year = document.getElementById("year");
+                            year.textContent = new Date().getFullYear();
+                        }
+                        displayYear();
+                    </script>
+                </span>
+				CloudSoftware</span>
+        </footer>
     </body>
 </html>

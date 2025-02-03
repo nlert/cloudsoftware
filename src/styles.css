@@ -16,10 +16,6 @@
     padding: 0;
 }
 
-body {
-    background-color: var(--blue);
-}
-
 h1, span.logo-text, .about-title {
     font-family: "Orbitron", serif;
     font-optical-sizing: auto;
@@ -41,30 +37,6 @@ h2, p, span, a, li {
     font-weight: 400;
     font-style: normal;
     font-size: 22px;
-}
-
-.learn-more {
-    --learn-more-height: 50px;
-
-    height: var(--learn-more-height);
-    border-radius: calc(var(--learn-more-height) / 2);
-    width: 200px;
-
-    display: grid;
-    place-items: center;
-
-    text-decoration: none;
-    background-color: black;
-}
-
-.learn-more:hover {
-    background-color:#202427;
-    cursor: pointer;
-}
-
-.learn-more:active {
-    transform: scale(0.99);
-    background-color: #343a40;
 }
 
 main {
@@ -188,6 +160,30 @@ header {
     box-shadow: var(--box-shadow);
 }
 
+.learn-more {
+    --learn-more-height: 50px;
+
+    height: var(--learn-more-height);
+    border-radius: calc(var(--learn-more-height) / 2);
+    width: 200px;
+
+    display: grid;
+    place-items: center;
+
+    text-decoration: none;
+    background-color: black;
+}
+
+.learn-more:hover {
+    background-color:#202427;
+    cursor: pointer;
+}
+
+.learn-more:active {
+    transform: scale(0.99);
+    background-color: #343a40;
+}
+
 /* About */
 .about {
     margin: auto;
@@ -209,13 +205,12 @@ header {
     border-radius: 15px 15px 0 0;
     height: 100px;
     margin-bottom: 35px;
-
 }
 
 .about-footer {
     background: linear-gradient(to top, 
                                 rgba(221, 234, 254, 1) 0%, 
-                                rgba(221, 234, 254, 0) 100%);
+                                rgba(221, 234, 254, 0) 100%);                
     border-radius: 0 0 15px 15px;
     height: 100px;
     margin-top: 35px;
@@ -270,4 +265,39 @@ li {
 
 li::before {
     content: '-';
+}
+
+/* Contact Us */
+.contact {
+    background: linear-gradient(to bottom right, #173E63, #2D77BE);
+    height: 200px;
+    margin-block: 100px;
+    display: grid;
+    place-items: center;
+}
+
+.contact-btn {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: calc(75px / 2);
+    font-size: 28px;
+
+    width: 300px;
+    height: 75px;
+
+    display: grid;
+    place-items: center;
+}
+
+footer {
+    height: 65px;
+    background-color: var(--blue);
+    display: grid;
+    place-items: center;
+}
+
+.footer-text {
+    color: white;
+    font-size: 16px;
 }
