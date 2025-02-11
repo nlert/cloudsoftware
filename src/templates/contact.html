@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CloudSoftware | Contact</title>
+
+    <script defer src="https://kit.fontawesome.com/8f4103f87d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo-container">
+                <img src="../assets/logo.jpg" alt="logo" class="logo-img" />
+                <span class="logo-text">CloudSoftware</span>
+            </a>
+            <nav class="header-nav">
+                <a href="index.html">Home</a>
+                <a href="contact.html" class="underline">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="contact-section">
+            <div class="contact-box">
+                <h1>Contact Us</h1>
+                <h2>Call:</h2>
+                <a href="tel:908-505-5930" class="pill-btn">
+                    <i class="fa-solid fa-phone"></i>
+                    908-505-5930
+                </a>
+                <h2>Or email:</h2>
+                <a href="mailto:admin@cloudsoftware.us" target="_blank" class="pill-btn">
+                    <i class="fa-solid fa-envelope"></i>
+                    admin@cloudsoftware.us
+                </a>
+            </div>
+            <img src="../assets/contact-image.jpg" class="contact-img" alt="woman-with-tablet">
+        </section>
+    </main>
+    <footer>
+        <span class="footer-text">© 
+            <span id="year" class="footer-text">
+                <script>
+                    function displayYear() {
+                        const year = document.getElementById("year");
+                        year.textContent = new Date().getFullYear();
+                    }
+                    displayYear();
+                </script>
+            </span>
+            CloudSoftware</span>
+    </footer>
 </body>
 </html>
